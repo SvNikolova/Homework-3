@@ -1,0 +1,334 @@
+
+TC1: Accessing the system through Internet Explorer
+1. Open Internet Explorer
+2. Open http://store.demo.com
+Expected result: Load header, navigation bar and the home page
+----------------------------------------------------------------------------
+TC2: Accessing the system through Mozilla Firefox
+1. Open Mozilla Firefox
+2. Open http://store.demo.com
+Expected result: Load header, navigation bar and the home page
+------------------------------------------------------------------------------
+TC3: Accessing the system through Google Chrome
+1. Open Google Chrome
+2. Open http://store.demo.com
+Expected result: Load header, navigation bar and the home page
+------------------------------------------------------------------------------
+TC4: Accessing the system through Safari
+1. Open Safari
+2. Open http://store.demo.com
+Expected result: Load header, navigation bar and the home page
+------------------------------------------------------------------------------
+TC5: Navigation bar "Home page" - slider button
+1. Open http://store.demo.com/home
+2. Click on slider's buttons
+Expected result: Leads to the Next/Previous slide
+-----------------------------------------------------------------------------
+TC6: Navigation bar "Home page" - latest products section
+1. Open http://store.demo.com/home
+2. Scroll below to "Latest Blog Post"
+3. Click on "More details" hyperlinks of the product
+Expected result: Show latest products section and open page of the choosen product
+-------------------------------------------------------------------------------------
+TC7: Navigation bar - "Checkout" - unregistered user
+1. Open http://store.demo.com/home
+2. Click on "Checkout" hyperlink
+Expected result: Redirect user to Register / Log in page
+-------------------------------------------------------------------------------------
+TC8: Navigation bar - "Checkout" - registered user
+1. Open http://store.demo.com/product-page/Checkout
+2. Click on "My account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+Expected result: User is successfully Logged in the system and 
+                 the "Logout" button is shown on the navigation bar instead "Log in" button
+-------------------------------------------------------------------------------------
+TC9: Navigation bar - "Checkout" - registered user - after Log out stay on "Checkout"
+1. Open http://store.demo.com/product-page/Checkout
+2. Click on "My account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Checkout" hyperlink
+7. Click "Logout" hyperlink
+Expected result: User is successfully Logged-out and lands to Checkout page
+--------------------------------------------------------------------------------------
+TC10: Navigation bar - user management - unregistered user
+1. Open http://store.demo.com/home
+2. Click on "My Account" hyperlink
+Expected result: Redirect user to Register or Log in page
+-------------------------------------------------------------------------------------
+TC11: Navigation bar - user management- registered user - show "Log out"
+1. Open http://store.demo.com/
+2. Click on "My account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+Expected result: Show "My Account" and "Log out" hyperlinks
+--------------------------------------------------------------------------------------
+TC12: Navigation bar - user management- registered user - show "Log in"
+1. Open http://store.demo.com/
+2. Click on "My account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Loguot" hyperlink
+Expected result: User is successfully Logged-out and redirect to Register or Log in page
+----------------------------------------------------------------------------------------
+TC13: "Log in" with the valid username and invalid password in the system
+1. 1. Open http://store.demo.com/
+2. Click on "My account" hyperlink
+3. Enter valid username
+4. Enter invalid password
+5. Click "Log in" button
+Expected result: Show message that username / password is incorrect
+------------------------------------------------------------------------------------------
+TC14: "Log in" with the invalid username and valid password in the system
+1. 1. Open http://store.demo.com/
+2. Click on "My account" hyperlink
+3. Enter invalid username
+4. Enter valid password
+5. Click "Log in" button
+Expected result: Show message that username / password is incorrect
+--------------------------------------------------------------------------------------------
+TC15: Navigation bar - Product category page
+1. Open http://store.demoqa.com/
+2. Click on "Product category" hyperlink
+Expected result: Open Product category page and show the sub-categories as links in a drop-down menu
+----------------------------------------------------------------------------------------
+TC16: Navigation bar - Product category - Grid view
+1. Open http://store.demoqa.com/products-page/product-category/
+2. Click on "Grid" 
+Expected result: Show products as grid in a simple view
+----------------------------------------------------------------------------------------
+TC17: Navigation bar - Product category - List view
+1. Open http://store.demoqa.com/products-page/product-category/
+2. Click on "List" 
+Expected result: Show the products in a list view
+----------------------------------------------------------------------------------------
+TC18: Navigation bar - Product category - sub-category links
+1. Open http://store.demoqa.com/products-page/product-category/
+2. Click on each of the sub-category hyperlink
+Expected result: Display respective products found in the sub-categories
+------------------------------------------------------------------------------------------
+TC19: Navigation bar "Services&Support"
+1. Open http://store.demoqa.com/
+2. Click on "Services&Support" hyperlink
+Expected result: Display Service and Support pages and sub-categories as links
+Note: There is no name of the button and no sub-categorys or hyperlink
+--------------------------------------------------------------------------------------------
+TC20: Navigation bar - "All Product" - unregistered users
+1. Open http://store.demoqa.com/
+2. Click on "All Product" hyperlink
+Expected result: Display all products page in a sipmle views of random products.
+                 When the user click on one name product, show it in the simple view.
+--------------------------------------------------------------------------------------------
+TC21:  Navigation bar - "All Product" - registered users
+1. Open http://store.demoqa.com/
+2. Click on "Log in" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click on "All Product" hyperlink
+Expected result: Display all products page and show simple views of random products
+--------------------------------------------------------------------------------------------
+TC22: Navigation bar - "All Product" - hyperlinks to product page
+1. Open http://store.demoqa.com/
+2. Click on "All Product" hyperlink
+3. Click on the name of one product form the symple view
+Expected result: Display product page of the choosen product
+--------------------------------------------------------------------------------------------
+TC23: "Add to cart" button for unregistered user from Home page
+1. Open http://store.demoqa.com/
+2. Click on "Buy now" button of product from slider
+3. Click on "Add to cart" button
+Expected result: Redirected user to Register/Log in form
+Note: Unregistered user can add product to cart.
+----------------------------------------------------------------------------------------------
+TC24: "Add to cart" button for registered user from "Product category" page
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click on "Product category" hyperlink
+7. Click on sub-category hyperlink
+8. Click on picture of one choosen product
+9. Click on "Add to cart" button from the product page
+Expected result: Display message that the choosen product is added to the cart.
+                 After adding product to cart the counter is changed
+---------------------------------------------------------------------------------------------------
+TC25: "Continue Shopping" option after adding products
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Buy now" from slider
+7. Click "Add to cart"
+8. Press "Continue Shopping" button
+Expected result: Open home page.
+Note: There is no "Continue Shopping" button.
+------------------------------------------------------------------------------------------------------
+TC26: "Go to Checkout" option after adding products
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Product category"
+7. Click on sub-category
+8. Click "Add to cart"
+9. Press "Go to Checkout" button
+Expected result: Open "Checkout" page and prompted to follow 3 steps process in order to finish the order
+Note: There is no "Go to Checkout" button.
+---------------------------------------------------------------------------------------------------------------
+TC27: "Checkout" page and "Your cart" section
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Product category"
+7. Click on sub-category
+8. Click "Add to cart"
+9. Press "Checkout" hyperlink
+10. Click on name of one product
+Expected result: Open product page.
+------------------------------------------------------------------------------------------------------------
+TC28: "Checkout" page and "Your cart" section - "Update" button
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Product category"
+7. Click on sub-category
+8. Click "Add to cart"
+9. Press "Checkout" hyperlink
+10. Change Quantity of the product
+11. Click "Update" button
+Expected result: The quantity is successfuly updated
+----------------------------------------------------------------------------------------------------------------
+TC29: "Checkout" page and "Your cart" section - "Remove" button
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Product category"
+7. Click on sub-category
+8. Click "Add to cart"
+9. Press "Checkout" hyperlink
+10. Click "Remove" button on one of the products
+Expected result: The product is successfuly removed
+-------------------------------------------------------------------------------------------------------------
+TC30: "Checkout" page and "Your cart" section - "Continue" button
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Product category"
+7. Click on sub-category
+8. Click "Add to cart"
+9. Press "Checkout" hyperlink
+10. Click "Continue" button
+Expected result: Lead to “Info” section, where it is request all details needed to process the order.
+---------------------------------------------------------------------------------------------------------------------------------------
+TC31: "Checkout" page and "Info" section – “Calculate” button
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Product category"
+7. Click on sub-category
+8. Click "Add to cart"
+9. Press "Checkout" hyperlink
+10. Click "Continue" button
+11. Select Country from drop-down menu
+12. Ener State/Province
+13. Click “Calculate” button
+Expected result: Show information about Total Shipping, Item cost, Tax and Total Price.
+-------------------------------------------------------------------------------------------------------------------------------
+TC32: "Checkout" page and "Info" section – fill the mandatory fields
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click "Product category"
+7. Click on sub-category
+8. Click "Add to cart"
+9. Press "Checkout" hyperlink
+10. Click "Continue" button
+11. Select Country from drop-down menu
+12. Ener State/Province
+13. Fill valid Email address
+14. Fill valid first name
+15. Fill valid last name
+16. Fill valid Address
+17. Fill valid Country
+18. Fill valid City
+19. Fill valid Phone number
+20. Click “Purchase”button
+Expected result: Display “Review and purchase” section where is all information about the order.
+                              Redirected user to “Final” section if everything is validated. 
+---------------------------------------------------------------------------------------------------------------------------------------
+TC33: Navigation bar - "My Account" hyperlink for registered user with valid data
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click on "My Account" hyperlink
+Expected result: Show My Acount page with the available sections:
+                             Purchase History, Your Details and Your Downloads
+------------------------------------------------------------------------------------------------
+TC34: "My Account" to "Purchase History" section
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click on "My Account" hyperlink
+7. Click on "Purchase History" section
+Expected result: Display Purchase history page were are shown all transactions for the current month
+                 If there are no such transactions - just inform the user with a friendly message
+------------------------------------------------------------------------------------------------------
+TC35: "My Account" to "Your Details" section
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click on "My Account" hyperlink
+7. Click on "Your Details" section
+Expected result: Directed to the User details page where the user can edit and update 
+                 of the Billing/contact details and shipping address
+-----------------------------------------------------------------------------------------------------
+TC36: "My Account" to "Your Downloads" section
+1. Open http://store.demoqa.com/
+2. Click on "My Account" hyperlink
+3. Enter valid username
+4. Enter valid password
+5. Click "Log in" button
+6. Click on "My Account" hyperlink
+7. Click on "Your Downloads" section
+Expected result: Load Downloads page where the user can see all purchased downloadable products for the current month. 
+                 If there are no such transactions - just inform the user with a friendly message
+----------------------------------------------------------------------------------------------------------------------
+TC37: Navigation bar - "Search" field and available products
+1. Open http://store.demoqa.com/
+2. Click on "Search" field
+3. Enter keyword in the field
+Expected result: Show a list with the founded products
+---------------------------------------------------------------------------------------------------------------------------
+TC38: Navigation bar - "Search" field and missing products
+1. Open http://store.demoqa.com/
+2. Click on "Search" field
+3. Enter keyword in the field
+Expected result: Display error message stating that “Sorry, but nothing matched your search criteria. Please try again with some different keywords.”
+------------------------------------------------------------------------------------------------------------------------------------------
